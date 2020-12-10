@@ -29,4 +29,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=partitect&show_icons=true&locale=en" alt="partitect" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=partitect&" alt="partitect" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=partitect&theme=shades-of-purple&icon_color=fad000" alt="partitect" /></p>
