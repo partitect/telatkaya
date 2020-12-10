@@ -1,6 +1,6 @@
 ### Hi! I'm Telat Kaya. Welcome to my Github Profile 👋
 
-![Yasin's GitHub Stats](https://github-readme-stats.vercel.app/api?username=partitect&show_icons=true&theme=dark)
+![Telat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=partitect&show_icons=true&theme=dark)
 
 
 I'm a **Frontend Developer / Javascript Developer** in Çankırı/Turkey
@@ -43,7 +43,7 @@ Coming soon... 😎
 </p>
 
 ## 📫 Contact Me
--  yasinatesim@gmail.com is my email address. 😋
+-  partitect@yandex.com is my email address. 😋
 
 
 <br>
