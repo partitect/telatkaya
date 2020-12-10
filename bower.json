@@ -1,0 +1,152 @@
+{
+  "name": "andiamo",
+  "description": "Fomantic-Ui Based Admin Template",
+  "main": "gulpfile.js",
+  "authors": [
+    "partitect"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "gulp",
+    "pug",
+    "sass",
+    "scss",
+    "babel",
+    "es6",
+    "ecmascript6",
+    "es6-javascript",
+    "preprocessor",
+    "admin",
+    "admin-template",
+    "semantic-ui",
+    "fomantic-ui",
+    "optimize",
+    "minify",
+    "theme",
+    "theme-development",
+    "theme",
+    "templatemonster"
+  ],
+  "homepage": "https://github.com/partitect/andiamo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fomantic-ui": "^2.8.6",
+    "jquery": "^3.4.1",
+    "echarts": "^4.8.0",
+    "jquery-slimscroll": "slimScroll#^1.3.8",
+    "waves": "https://github.com/fians/Waves.git",
+    "fullcalendar": "^3.9.0",
+    "prism": "^1.19.0",
+    "clipboard": "latest",
+    "lightgallery": "lightGallery#^1.7.2",
+    "imagesloaded": "^4.1.4",
+    "color-thief": "^2.3.0",
+    "echarts-liquidfill": "https://github.com/ecomfe/echarts-liquidfill.git#^2.0.6",
+    "sly": "^1.6.1",
+    "jquery-ui": "https://github.com/agraciakuvut/jquery-ui-draggable-droppable.git",
+    "datatables": "datatable#^1.10.21",
+    "jquery.easing": "^1.3.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "./dist/jquery.min.js"
+      ]
+    },
+    "fomantic-ui": {
+      "main": [
+        "./dist/components/*.min.*",
+        "./dist/themes/default/assets/fonts/*",
+        "./dist/themes/default/assets/images/*",
+        "./dist/semantic.min.js",
+        "./dist/semantic.min.css"
+      ]
+    },
+    "echarts": {
+      "main": [
+        "./dist/echarts-en.min.js",
+        "./map/js/world.js",
+        "./map/js/usa.js"
+      ]
+    },
+    "echarts-liquidfill": {
+      "main": [
+        "./dist/echarts-liquidfill.min.js"
+      ]
+    },
+    "datatables": {
+      "main": [
+        "./media/**/*"
+      ]
+    },
+    "sly": {
+      "main": [
+        "./dist/sly.min.js"
+      ]
+    },
+    "jquery-ui": {
+      "main": [
+        "./dist/jquery-ui-droppable.js"
+      ]
+    },
+    "jquery-slimscroll": {
+      "main": [
+        "./jquery.slimscroll.min.js"
+      ]
+    },
+    "waves": {
+      "main": [
+        "dist/*.*"
+      ]
+	},
+	"jquery.easing": {
+		"main": [
+		  "js/*.*"
+		]
+	  },
+    "fullcalendar": {
+      "main": [
+        "dist/**/**/*.*"
+      ]
+    },
+    "prism": {
+      "main": [
+        "prism.js",
+        "./components/prism-bash.min.js",
+        "./components/prism-javascript.min.js",
+        "./components/prism-pug.min.js",
+        "./themes/prism-tomorrow.css",
+        "./plugins/normalize-whitespace/prism-normalize-whitespace.min.js",
+        "./plugins/toolbar/prism-toolbar.css",
+        "./plugins/toolbar/prism-toolbar.min.js"
+      ]
+    },
+    "clipboard": {
+      "main": [
+        "./dist/*.*"
+      ]
+    },
+    "lightgallery": {
+      "main": [
+        "dist/**/**/*.*"
+      ]
+    },
+    "imagesloaded": {
+      "main": [
+        "*.*"
+      ]
+    },
+    "color-thief": {
+      "main": [
+        "dist/*.*"
+      ]
+    }
+  }
+}

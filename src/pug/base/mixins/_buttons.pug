@@ -1,0 +1,21 @@
+mixin uiButton(cls="",title="")
+    a.ui.button(class=""+cls+"")
+        | #{title}
+mixin uiIconButton(cls="",title="",icon="")
+    a.ui.button(class=""+cls+"")
+        i.icon(class=""+icon+"")
+        | #{title}
+mixin andiButton(cls="",title="")
+    a.andi-btn(class=""+cls+"")
+        | #{title}
+mixin andiIconedButton(cls="",title="",icon="")
+    a.andi-btn(class=""+cls+"")
+        i.icon(class=""+icon+"")
+        | #{title}
+mixin andiImageButton(cls="",title="",src="")
+    a.andi-btn(class=""+cls+"")
+        img(src="./assets/img/svg/"+src+".svg",alt="andiamo-images")
+        | #{title}
+mixin andiIconButton(cls="",icon="")
+    a.andi-btn(class=""+cls+"")
+        i.icon(class=""+icon+"")

@@ -1,0 +1,39 @@
+.ui.checkbox {
+	label {
+		color: var(--font-color);
+		cursor: pointer;
+		font-family: "Muli400", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+		font-size: 0.9em;
+		&:hover {
+			color: var(--font-color);
+		}
+	}
+	&.disabled {
+		label {
+			color: var(--font-color);
+		}
+	}
+	&.slider {
+		label {
+			color: var(--font-color);
+			&:before {
+				background-color: var(--heading-color) !important;
+			}
+			&:hover {
+				color: var(--font-color);
+			}
+		}
+	}
+	&.toggle {
+		label {
+			color: var(--font-color);
+			&:before {
+				background-color: var(--heading-color) !important;
+			}
+			&:hover {
+				color: var(--font-color);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+// SASS Variables
+$dark: #111;
+$light: #EEE;
+$toggle-height: 20px;
+$toggle-width: $toggle-height * 2.33;
+$border-width: 2px;
+.dark-toggle {
+    cursor: pointer;
+    visibility: hidden;
+    height: $toggle-height;
+    width: $toggle-width;
+    position: relative;
+
+    z-index: 2;
+    &::before, &::after { // track, slider
+      content: "";
+      display: block;
+      transition: 0.1s all ease-in-out;
+      visibility: visible;
+    }
+    &::before { // track
+      background: $light;
+      border: $border-width solid $dark;
+      border-radius: $toggle-height;
+      height: inherit;
+      width: inherit;
+    }
+    &::after { // slider
+      background: $dark;
+      border-radius: $toggle-height - ($border-width * 4);
+      height: $toggle-height - ($border-width * 4);
+      width: $toggle-height;
+      position: absolute;
+      top: $border-width * 2;
+      left: $border-width * 2;
+    }
+    &:checked { // toggle state: checked
+
+      &::before { //track
+        background: $dark;
+        border: $border-width solid $light;
+      }
+      &::after { // slider
+        background: $light;
+        left: $toggle-width - $toggle-height - $border-width * 2;
+      }
+
+    }
+  }

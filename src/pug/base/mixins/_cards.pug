@@ -1,0 +1,138 @@
+mixin basicSegment()
+	.ui.basic.segment
+		block
+mixin normalSegment(cls="",title="",desc="")
+	.ui.segment(class=""+cls+"")
+		h4=title
+		p=desc
+		block
+mixin actionSegment(cls="",title="")
+	.ui.segment.action-segment(class=""+cls+"")
+		h4=title
+		.segment-action
+			a.icon.button(data-action="code")
+				i.icon.iconfont.icon-BAI-xiajiantou
+		.segment-body
+			block
+mixin segment(title,desc,...style)
+	.ui.segment(class=style.join(" "))
+		.ui.header
+			h4=title
+		p=desc
+		.ui.hidden.divider
+		.segment-body
+			block
+mixin codeSegment()
+	.ui.segment.preCode-segment
+		.code-action
+			a.icon.button(data-action="code")
+				i.icon.code
+		.segment-body
+			block
+mixin cryptoSegment(title,desc,icon,value,trendvalue,chartid,colorclass,arrowicon,...style)
+	.ui.segment.__crypto-segment(class=""+colorclass+"")
+		.segment-body
+			.ui.grid
+				.ten.wide.column
+					h6.ui.header
+						img.ui.fluid.image(src="./assets/img/crypto-icons/svg/"+icon+".svg",alt="andiamo-images")
+						.content
+							| #{desc}
+							.sub.header=title
+				.six.wide.column.right.aligned.crypto-bg
+					h6.ui.header
+						img.ui.fluid.image(src="./assets/img/svg/"+arrowicon+"-arrow.svg",alt="andiamo-images")
+						.content
+							| $#{value}
+							.sub.header='%' + trendvalue
+		.andiamo-charts(id="crypto-chart-"+chartid+"",style="width:100%;height:100px")
+mixin analysticSegment(title,value,desc,icon,colorclass,index,...style)
+	.ui.segment.__analystic-segment
+		.segment-body
+			.ui.grid
+				.five.wide.column
+					i.card-icon.icon.big.iconfont(class="icon-"+icon+"")
+				.eleven.wide.column
+					.ui.statistic
+						.text.value
+							| #{title}
+							br
+							span(class=colorclass) #{value}
+						.label
+							| #{desc}
+		.segment-footer
+			.ui.grid
+				.sixteen.wide.column
+					.andiamo-charts(id="analystic-chart-"+(index+1)+"",style="width:100%;height:50px")
+mixin restaurantSegment(title,value,desc,icon,colorclass,index,...style)
+	.ui.segment.__restaurant-segment
+		.segment-body
+			.ui.grid
+				.ten.wide.column
+					i.card-icon.icon.big.iconfont(class="icon-"+icon+"")
+					.ui.statistic
+						.text.value
+							span(class=colorclass) #{value}
+							br
+							| #{title}
+				.six.wide.column
+					.restaurant-charts-wrapper
+						.andiamo-charts(id="restaurant-chart-"+(index+1)+"",style="width:100%;height:50px")
+mixin fitnessSegment(title,index,height=""...style)
+	.ui.segment.__fitness-segment
+		h5.ui.header.center.aligned=title
+		.andiamo-charts(id="fitness-chart-"+(index+1)+"",style="width:100%;height:"+height+"")
+mixin colorBoxSegment(cls,title,hex,rgb)
+	.ui.segment.__color-box-segment
+		.color-container
+			.color-wrapper(class="__"+cls+"")
+		.text-container
+			h5=title
+			p.hex="Hex: #" + hex
+			p.rgb="Rgb: " + rgb
+
+- var todoList = ["Finish coneference slides","Lament about the state","Show Secret Demo","Talk with conf attendees"];
+mixin todo-list()
+	svg(viewBox='0 0 0 0', style='position: absolute; z-index: -1; opacity: 0;')
+		defs
+			lineargradient#boxGradient(gradientUnits='userSpaceOnUse', x1='0', y1='0', x2='25', y2='25')
+				stop(offset='0%', stop-color='#27FDC7')
+				stop(offset='100%', stop-color='#0FC0F5')
+			lineargradient#lineGradient
+				stop(offset='0%', stop-color='#0FC0F5')
+				stop(offset='100%', stop-color='#27FDC7')
+			path#todo__line(stroke='url(#lineGradient)', d='M21 12.3h168v0.1z')
+			path#todo__box(stroke='url(#boxGradient)', d='M21 12.7v5c0 1.3-1 2.3-2.3 2.3H8.3C7 20 6 19 6 17.7V7.3C6 6 7 5 8.3 5h10.4C20 5 21 6 21 7.3v5.4')
+			path#todo__check(stroke='url(#boxGradient)', d='M10 13l2 2 5-5')
+			circle#todo__circle(cx='13.5', cy='12.5', r='10')
+	.todo-list
+		each value, index in todoList
+			.todo
+				input.todo__state(type='checkbox')
+				svg.todo__icon(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', viewBox='0 0 200 25')
+					use.todo__line(xlink:href='#todo__line')
+					use.todo__box(xlink:href='#todo__box')
+					use.todo__check(xlink:href='#todo__check')
+					use.todo__circle(xlink:href='#todo__circle')
+				.todo__text=value
+- var eventList = [{cls:"primary",title:'Tim Howard cleared',img:"super_man"},{cls:"secondary",title:'Lenna Burton added now',img:"super_woman"},{cls:"danger",title:'Sunny Swimwell awarded',img:"undraw_woman_mevk"},{cls:"info",title:'Kate Linpsay add message',img:"undraw_Notify_re_65on"}];
+mixin event-list()
+	each value, index in eventList
+		.ui.segment.__event-list-segment(class="__"+value.cls+"")
+			img(src="./assets/img/svg/"+value.img+".svg",alt="andiamo-images")
+			p=value.title
+- var paymentCardList = [{title:"Manon Betts",desc:"Administrator",img:"48",hours:"347 mins"},{title:"Mallory Mccray",desc:"Supporter",img:"49",hours:"287 mins"},{title:"Alton Lynn",desc:"Co-Operator",img:"50",hours:"109 mins"},{title:"Kornelia Hull",desc:"Manager",img:"51",hours:"88 mins"}]
+mixin payment-card()
+	each value, index in paymentCardList
+		.ui.segment.__account-card
+			.text-wrapper
+				.left
+					h5=value.title
+					p=value.desc
+				.right
+					h4=value.hours
+			.graph-wrapper
+				.left
+					img(src="./assets/img/avatar/"+value.img+".png",alt="andiamo-images")
+				.right
+					.andiamo-charts(id="account-chart-"+(index+1)+"",style="width:100%;height:100px")

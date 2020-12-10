@@ -1,0 +1,57 @@
+p{
+	&.text-default{
+		color:var(--font-color);
+	}
+	&.text-primary{
+		color:rgba(var(--btn-primary),1)
+	}
+	&.text-success{
+		color:rgba(var(--btn-success),1)
+	}
+	&.text-danger{
+		color:rgba(var(--btn-danger),1)
+	}
+	&.text-info{
+		color:rgba(var(--btn-info),1)
+	}
+	&.text-warning{
+		color:rgba(var(--btn-warning),1)
+	}
+}
+
+blockquote {
+	color: rgba(250, 200, 130, 0.6);
+	font-family: Tahoma, sans-serif;
+	font-size: 40px;
+	width: 60%;
+	margin: 0 auto;
+ }
+ blockquote h1 {
+	font-size: 4rem;
+ }
+ blockquote p {
+	font-style: italic;
+	margin-bottom: 0;
+ }
+
+ blockquote cite {
+	font-size: 1.5rem;
+ }
+ dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+}
+dt::after {
+    content: ":";
+}
+dd {
+    margin: 0 0 0 50px;
+    padding: 0 0 0.5em 0;
+}

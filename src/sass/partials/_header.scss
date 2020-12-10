@@ -1,0 +1,45 @@
+.content-wrapper {
+    .menu {
+        &.nav-menu {
+            width: calc(100% - 235px);
+            height: 70px;
+            background-color: var(--partials-bg-color);
+            position: fixed;
+            right: 0;
+            left: 235px;
+            z-index: 978;
+            border: 0 !important;
+            box-shadow: none !important;
+            -webkit-transition: margin-left .5s;
+            transition: margin-left .5s;
+
+            @include mq("phablet", max) {
+                width: calc(100%);
+                left: 0;
+            }
+
+            &.collapse {
+                width: calc(100% - 60px);
+                left: 60px;
+            }
+
+            .item {
+                color: var(--font-color);
+
+                &:hover {
+                    color: var(--font-color);
+				}
+				&.toggle-sidebar{
+					@include mq("phablet", max) {
+						display: none;
+					}
+				}
+				&.lang-dropdown{
+					@include mq("phablet", max) {
+						display: none;
+					}
+				}
+            }
+        }
+    }
+}

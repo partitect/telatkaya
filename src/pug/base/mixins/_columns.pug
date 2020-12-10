@@ -1,0 +1,11 @@
+mixin column(size="")
+	.column(class=""+size+"")
+		block
+
+mixin grido(...style)
+	.ui.grid(class="stackable " + style.join(" "))
+		block
+
+mixin col(...style)
+	div(class=style.join(" ")+" computer column")
+		block

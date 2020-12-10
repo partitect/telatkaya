@@ -1,0 +1,14 @@
+.ui.toast{
+	.content{
+		.ui.header{
+			color:#A0A7A1
+		}
+	}
+	&.error,&.success,&.info,&.warning{
+		.content{
+			.ui.header{
+				color:#fff!important
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.right-side-menu {
+	background-color: var(--partials-bg-color);
+	padding-bottom: 100px;
+	.right-tab-menu {
+		.item {
+			color: var(--font-color);
+
+			i {
+				color: var(--font-color);
+			}
+		}
+	}
+}

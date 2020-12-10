@@ -1,0 +1,17 @@
+
+@mixin remify($property, $sizes) {
+
+    $pixelSizes: ();
+    $remSizes: ();
+    @each $s in $sizes {
+        $pixelSizes: append($pixelSizes, $s * 1px);
+        $remSizes: append($remSizes, rem($s));
+    }
+
+    #{$property}: $pixelSizes;
+    #{$property}: $remSizes;
+}
+@function rem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}

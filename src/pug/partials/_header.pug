@@ -1,0 +1,31 @@
+include ./includes/_menu
+.ui.top.fixed.icon.menu.borderless.nav-menu
+	a.toc.item.toggle-sidebar
+		i.icon.large.iconfont.icon-ziyuan114
+	.right.menu
+		.item
+			input.dark-toggle#toggle(type='checkbox')
+		.ui.dropdown.andi-dropdown.item.lang-dropdown
+			| English
+			i.dropdown.icon
+			.menu
+				a.item
+					i.united.kingdom.flag
+					| English
+				a.item
+					i.turkey.flag
+					| Turkish
+				a.item
+					i.spain.flag
+					| Spanish
+		.ui.dropdown.andi-dropdown.item
+			img.ui.mini.circular.image.navbar-img(src='./assets/img/people/1.jpg', alt='label-image')
+			.menu
+				a.item(href='#') Inbox
+				a.item(href='profile.html') Profile
+				a.item(href='#') Settings
+				.ui.divider
+				a.item Need Help?
+				a.item(href='login.html') Sign Out
+		a.item.toggle-right-sidebar
+			i.icon.large.iconfont.icon-ziyuan59

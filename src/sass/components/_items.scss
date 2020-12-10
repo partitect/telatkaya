@@ -1,0 +1,58 @@
+.ui.items{
+	.item{
+		.header,.meta,.description{
+			color:var(--font-color)!important;
+
+		}
+	}
+	&.__analystic-items{
+		.item{
+			.huge.icon{
+				font-size:3em;
+				margin-right: 15px;
+				margin-bottom: 10px;
+				color:var(--font-color)!important;
+			}
+			.meta,.description{
+				color:var(--font-color)!important;
+			}
+		}
+	}
+	&.__restaurant-items{
+		margin:0;
+		.item{
+			min-height: 120px;
+			svg{
+				height: 80px;
+			}
+		}
+
+	}
+	&.__best-sale-items{
+		.item{
+			min-height: 80px;
+			.description{
+				margin-top: 0;
+			}
+			.meta{
+				span{
+					line-height: 1.4em;
+					font-size: .9em;
+					display: block;
+				}
+			}
+		}
+	}
+	&.__support-ticket-items{
+		.item{
+			min-height: 80px;
+			.meta{
+				span{
+					line-height: 1.4em;
+					font-size: .9em;
+					display: block;
+				}
+			}
+		}
+	}
+}

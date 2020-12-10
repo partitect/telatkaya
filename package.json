@@ -1,0 +1,85 @@
+{
+	"name": "andiamo",
+	"version": "1.0.0",
+	"description": "Fomantic-Ui Based Admin Template",
+	"homepage": "https://andiamo.netlify.app/",
+	"main": "gulpfile.js",
+	"scripts": {
+		"start": "gulp",
+		"postinstall": "bower install"
+	},
+	"bugs": {
+		"email": "partitect@yandex.com",
+		"url": "https://github.com/partitect/andiamo/issues"
+	},
+	"keywords": [
+		"gulp",
+		"pug",
+		"sass",
+		"scss",
+		"babel",
+		"es6",
+		"ecmascript6",
+		"es6-javascript",
+		"preprocessor",
+		"admin",
+		"admin-template",
+		"semantic-ui",
+		"fomantic-ui",
+		"optimize",
+		"minify",
+		"theme",
+		"theme-development",
+		"theme",
+		"templatemonster"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/partitect/andiamo/"
+	},
+	"author": {
+		"name": "partitect",
+		"email": "partitect@yandex.com",
+		"url": "https://andiamo.netlify.app/"
+	},
+	"license": "ISC",
+	"browserslist": [
+		"last 2 version"
+	],
+	"documentation": "https://andiamo.netlify.app/docs/#/",
+	"purchase": "",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"bower": "1.8.8",
+		"browser-sync": "^2.26.5",
+		"del": "^4.1.0",
+		"gulp": "^4.0.1",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-babel": "^7.0.0",
+		"gulp-changed-in-place": "^2.3.0",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-include": "^2.4.1",
+		"gulp-load-plugins": "^1.5.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-prettier": "^2.1.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-size": "^3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"gulp-util": "^3.0.8",
+		"gulp-zip": "^4.2.0"
+	},
+	"dependencies": {
+		"gulp-bower-normalize": "^1.1.1",
+		"gulp-changed": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-htmlmin": "^5.0.1",
+		"imagemin-mozjpeg": "^9.0.0",
+		"main-bower-files": "^2.13.3"
+	}
+}

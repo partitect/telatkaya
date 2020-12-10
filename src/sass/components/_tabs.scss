@@ -1,0 +1,20 @@
+.ui.tabular {
+	.item {
+		color: var(--font-color) !important;
+		cursor: pointer;
+		background: var(--partials-bg-color) !important;
+	}
+}
+.tab.segment {
+	min-height: 300px;
+	&.loading {
+		min-height: 300px;
+	}
+}
+.ui.pointing.secondary{
+	.item {
+		color: var(--font-color) !important;
+		cursor: pointer;
+
+	}
+}

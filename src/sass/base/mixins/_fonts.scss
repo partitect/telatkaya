@@ -1,0 +1,63 @@
+@include font-face(Muli300, '../fonts/muli/muli-300');
+@include font-face(Muli400, '../fonts/muli/muli-regular');
+@include font-face(OpenSans400, '../fonts/open-sans/open-sans-regular');
+@include font-face(OpenSans700, '../fonts/open-sans/open-sans-700');
+
+//Fomantic-Ui Font-Family Changes
+body {
+    font-family: 'Muli400', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.ui.header,
+.ui.list .list>.item .header,
+.ui.list>.item .header,
+.ui.steps .step .title,
+.ui.message .header,
+.ui.cards>.card>.content>.header,
+.ui.card>.content>.header,
+.ui.items>.item>.content>.header,
+.ui.modal>.header,
+.ui.popup>.header,
+.ui.search>.results>.message .header,
+.ui.statistics .statistic>.value,
+.ui.statistic>.value,
+.ui.statistics .statistic>.label,
+.ui.statistic>.label,
+.sub.header
+ {
+    font-family: 'OpenSans400', 'Helvetica Neue', Arial, Helvetica, sans-serif!important;
+    color: var(--font-color)!important;
+}
+
+
+.ui.text.container,
+.ui.input>input,
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="time"],
+.ui.form input[type="text"],
+.ui.form input[type="file"],
+.ui.form input[type="url"],
+.ui.input textarea,
+.ui.form textarea,
+.ui.menu,
+.ui.accordion .title:not(.ui),
+.ui.search>.results .result .title,
+.ui.category.search>.results .category>.name,p,a,.ui.dropdown>.menu .item,.ui.dropdown > .default.text,.ui.dropdown > .text,.ui.list>.item,.ui.list>.item .content {
+    font-family: 'Muli400', 'Helvetica Neue', Arial, Helvetica, sans-serif!important;
+    color: var(--font-color);
+}
+.ui.button{
+	font-family: 'Muli400', 'Helvetica Neue', Arial, Helvetica, sans-serif!important;
+}

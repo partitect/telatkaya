@@ -1,0 +1,11 @@
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+	margin-top: 20px;
+	border-radius: 5px;
+}
+.code-block{
+	overflow-x: hidden!important;
+}
+pre {
+    white-space: pre-wrap!important;
+    word-break: break-word!important;
+}

@@ -1,0 +1,20 @@
+.transition-content{
+	padding: 10px 0;
+
+	.ui.segment{
+		display:flex;
+		justify-content:flex-start;
+		flex-direction: column;
+		min-height: 300px;
+		z-index: 1;
+		img{
+			margin: 20px 0;
+			width:50%;
+			align-self: center;
+		}
+		&.delayed-segment{
+			max-height: 240px;
+			min-height: 240px;
+		}
+	}
+}

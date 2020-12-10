@@ -1,0 +1,16 @@
+.ui.grid.stackable
+    .row
+        .sixteen.wide.column
+            .ui.segment.after-border
+                .ui.grid
+                    .sixteen.wide.mobile.sixteen.wide.tablet.eight.wide.computer.column
+                        .ui.basic.segment
+                            h5.text-uppercase=pageTitle
+                    .sixteen.wide.mobile.sixteen.wide.tablet.eight.wide.computer.column
+                        .ui.basic.segment.breadcrumb-segment
+                            .ui.breadcrumb
+                                a.section HOME
+                                .divider  /
+                                a.section=menuCrumb
+                                .divider  /
+                                .active.section=pageTitle

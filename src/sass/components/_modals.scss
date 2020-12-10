@@ -1,0 +1,16 @@
+.ui.modal {
+  &.andi-modal {
+	background: var(--partials-bg-color);
+    .header,.content,.actions {
+      background: var(--partials-bg-color);
+      color: var(--font-color);
+	}
+
+    .close.icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: var(--font-color);
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.ui.menu {
+	background: var(--content-bg-color);
+	.item {
+		color: var(--font-color);
+		&.active {
+			color: var(--heading-color);
+		}
+		&:hover {
+			color: var(--font-color) !important;
+		}
+	}
+	&.secondary {
+		.item {
+			color: var(--font-color);
+			&.active {
+				color: var(--heading-color);
+				background: var(--content-bg-color);
+			}
+			&:hover {
+				color: var(--font-color) !important;
+			}
+		}
+	}
+	&.pointing {
+		.item {
+			&.active {
+				&::after {
+					background-color: var(--content-bg-color);
+					border-bottom: 1px solid var(--content-bg-color);
+					border-right: 1px solid var(--content-bg-color);
+				}
+				&:hover {
+					&::after {
+						background-color: var(--content-bg-color);
+						border-bottom: 1px solid var(--content-bg-color);
+						border-right: 1px solid var(--content-bg-color);
+					}
+				}
+			}
+		}
+	}
+	&.icon {
+		.item {
+			color: var(--font-color) !important;
+			i {
+				color: var(--font-color) !important;
+			}
+		}
+	}
+	&.vertical {
+		background: var(--content-bg-color);
+		.item {
+			color: var(--font-color) !important;
+			i {
+				color: var(--font-color) !important;
+			}
+		}
+		&.pointing {
+			.item {
+				&.active {
+					&::after {
+						background-color: var(--content-bg-color);
+						border-bottom: 1px solid var(--content-bg-color);
+						border-right: 1px solid var(--content-bg-color);
+						border-top: 1px solid var(--content-bg-color);
+						border-left: 1px solid var(--content-bg-color);
+					}
+					&:hover {
+						&::after {
+							background-color: var(--content-bg-color);
+							border-bottom: 1px solid var(--content-bg-color);
+							border-right: 1px solid var(--content-bg-color);
+							border-top: 1px solid var(--content-bg-color);
+							border-left: 1px solid var(--content-bg-color);
+						}
+					}
+				}
+			}
+		}
+	}
+}
