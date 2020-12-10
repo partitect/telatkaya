@@ -1,6 +1,6 @@
 ### Hi! I'm Telat Kaya. Welcome to my Github Profile 👋
 
-![Telat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=hsanhiner66&show_icons=true&theme=dark)
+![Telat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=hsahiner&show_icons=true&theme=dark)
 
 
 I'm a **Frontend Developer / Javascript Developer** in Çankırı/Turkey
