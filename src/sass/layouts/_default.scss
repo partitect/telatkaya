@@ -3,7 +3,8 @@
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: auto;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 html {
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -27,39 +28,23 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	transition: 0.25s all linear;
-	&.__error-pages{
-		overflow: hidden;
-	}
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 .main-wrapper{
 	display: flex;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: rgb(27,27,27);
-	flex-direction: row;
-	justify-content: flex-start;
-	.left-wrapper{
+	justify-content: center;
+	align-items: center;
+	.page-wrapper{
 		display: flex;
-		width:10%;
-		height: 100vh;
-		position: fixed;
-		border-right: solid 1px rgba(255,255,255,.3);
-		padding: 10px;
-		align-items: center;
-		justify-content: center;
-
-		.ui.button{
-			margin-bottom: 10px;
-			min-width: 150px;
-		}
-	}
-	.right-wrapper{
-		display: flex;
-		width:90%;
+		width:100%;
 		min-height: 100vh;
-		overflow-y: auto;
-		background: rgba(255,255,255,.05);
-		margin-left: 10%;
+		overflow:hidden;
+		padding: 20px;
 	}
 }
 

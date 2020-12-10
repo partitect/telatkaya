@@ -5,11 +5,7 @@ block pageVars
 	- var pageTitle = "Telat Kaya Personal Web";
 block PageContent
 	.main-wrapper
-		.left-wrapper
-			ul
-				each list in [{title:"Github",link:"#about",icon:"github",color:"blue"},{title:"Twitter",link:"#about",icon:"twitter",color:"blue"},{title:"Dev.to",link:"#about",icon:"",color:"blue"},{title:"Gitlab",link:"#about",icon:"gitlab",color:"yellow"}]
-					li
-						a.ui.labeled.icon.button(href=""+list.link+"",class=""+list.color+"")
-							i.icon(class=""+list.icon+"")
-							|  #{list.title}
-		.right-wrapper
+		.page-wrapper
+			.teka-charts(id="tekaCharts",style="width:100%;height:85vh")
+block extraScripts
+	script(src="./assets/js/vendors/_charts.min.js")

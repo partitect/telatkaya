@@ -41,26 +41,16 @@
     "jquery": "^3.4.1",
     "echarts": "^4.8.0",
     "jquery-slimscroll": "slimScroll#^1.3.8",
-    "waves": "https://github.com/fians/Waves.git",
-    "fullcalendar": "^3.9.0",
-    "prism": "^1.19.0",
-    "clipboard": "latest",
-    "lightgallery": "lightGallery#^1.7.2",
-    "imagesloaded": "^4.1.4",
     "color-thief": "^2.3.0",
-	"echarts-liquidfill": "https://github.com/ecomfe/echarts-liquidfill.git#^2.0.6",
-	"leonsans": "https://github.com/cmiscm/leonsans.git",
-    "sly": "^1.6.1",
-    "jquery-ui": "https://github.com/agraciakuvut/jquery-ui-draggable-droppable.git",
-    "datatables": "datatable#^1.10.21",
-    "jquery.easing": "^1.3.1"
+	"echarts-liquidfill": "https://github.com/ecomfe/echarts-liquidfill.git#^2.0.6"
+
   },
   "overrides": {
     "jquery": {
       "main": [
         "./dist/jquery.min.js"
       ]
-    },
+	},
     "fomantic-ui": {
       "main": [
         "./dist/components/*.min.*",
@@ -82,71 +72,9 @@
         "./dist/echarts-liquidfill.min.js"
       ]
     },
-    "datatables": {
-      "main": [
-        "./media/**/*"
-      ]
-	},
-    "leonsans": {
-      "main": [
-        "./dist/**/*"
-      ]
-    },
-    "sly": {
-      "main": [
-        "./dist/sly.min.js"
-      ]
-    },
-    "jquery-ui": {
-      "main": [
-        "./dist/jquery-ui-droppable.js"
-      ]
-    },
     "jquery-slimscroll": {
       "main": [
         "./jquery.slimscroll.min.js"
-      ]
-    },
-    "waves": {
-      "main": [
-        "dist/*.*"
-      ]
-	},
-	"jquery.easing": {
-		"main": [
-		  "js/*.*"
-		]
-	  },
-    "fullcalendar": {
-      "main": [
-        "dist/**/**/*.*"
-      ]
-    },
-    "prism": {
-      "main": [
-        "prism.js",
-        "./components/prism-bash.min.js",
-        "./components/prism-javascript.min.js",
-        "./components/prism-pug.min.js",
-        "./themes/prism-tomorrow.css",
-        "./plugins/normalize-whitespace/prism-normalize-whitespace.min.js",
-        "./plugins/toolbar/prism-toolbar.css",
-        "./plugins/toolbar/prism-toolbar.min.js"
-      ]
-    },
-    "clipboard": {
-      "main": [
-        "./dist/*.*"
-      ]
-    },
-    "lightgallery": {
-      "main": [
-        "dist/**/**/*.*"
-      ]
-    },
-    "imagesloaded": {
-      "main": [
-        "*.*"
       ]
     },
     "color-thief": {
