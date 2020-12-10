@@ -31,60 +31,35 @@ body {
 		overflow: hidden;
 	}
 }
-
-.page-body-wrapper {
-	min-height: calc(100vh);
-	display: -webkit-flex;
+.main-wrapper{
 	display: flex;
-	-webkit-flex-direction: row;
+	width: 100%;
+	height: 100vh;
+	background: rgb(27,27,27);
 	flex-direction: row;
-	padding-left: 0;
-	padding-right: 0;
-}
+	justify-content: flex-start;
+	.left-wrapper{
+		display: flex;
+		width:10%;
+		height: 100vh;
+		position: fixed;
+		border-right: solid 1px rgba(255,255,255,.3);
+		padding: 10px;
+		align-items: center;
+		justify-content: center;
 
-.main-content {
-	//transition: width 2.5s ease, margin 2.5s ease;
-	width: calc(100% - 215px);
-	min-height: calc(100vh);
-	display: -webkit-flex;
-	display: flex;
-
-	-webkit-flex-direction: column;
-	flex-direction: column;
-
-	&.collapse {
-		width: calc(100%);
+		.ui.button{
+			margin-bottom: 10px;
+			min-width: 150px;
+		}
 	}
-
-	@include mq("phablet", max) {
-		width: calc(100% - 0px);
-	}
-}
-
-.ui.tab {
-	padding: 10px;
-}
-
-.content-wrapper {
-	margin-left: 235px;
-	transition: all 0.3s ease-in-out;
-	min-height: calc(var(--vh, 1vh) * 100);
-	background-color: var(--content-bg-color);
-	-webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-	-moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-	-o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-
-	&.collapse {
-		margin-left: 60px;
-	}
-
-	@include mq("phablet", max) {
-		margin-left: 0;
-	}
-
-	.content-page {
-		padding: 20px 15px 60px 15px;
-		margin-top: 70px;
+	.right-wrapper{
+		display: flex;
+		width:90%;
+		min-height: 100vh;
+		overflow-y: auto;
+		background: rgba(255,255,255,.05);
+		margin-left: 10%;
 	}
 }
+

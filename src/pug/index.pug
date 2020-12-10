@@ -1,7 +1,15 @@
 extends layouts/default
 block pageVars
-	- var page = "blank";
+	- var page = "telatkaya";
 	- var menuCrumb = "Pages";
-	- var pageTitle = "Blank";
+	- var pageTitle = "Telat Kaya Personal Web";
 block PageContent
-	.price-content
+	.main-wrapper
+		.left-wrapper
+			ul
+				each list in [{title:"Github",link:"#about",icon:"github",color:"blue"},{title:"Twitter",link:"#about",icon:"twitter",color:"blue"},{title:"Dev.to",link:"#about",icon:"",color:"blue"},{title:"Gitlab",link:"#about",icon:"gitlab",color:"yellow"}]
+					li
+						a.ui.labeled.icon.button(href=""+list.link+"",class=""+list.color+"")
+							i.icon(class=""+list.icon+"")
+							|  #{list.title}
+		.right-wrapper
