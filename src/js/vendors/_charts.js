@@ -2,137 +2,116 @@ var TekaChart = echarts.init(document.getElementById("tekaCharts"));
 var _normal;
 
 var sportsIcon = {
-	'a':'assets/img/galatasaray.png',
-}
-var richTextStyle={
+	a: "assets/img/galatasaray.png"
+};
+var richTextStyle = {
 	width: 100,
 	height: 150,
 	lineHeight: 50,
-	shadowColor: '#fff',
+	shadowColor: "#fff",
 	shadowBlur: 0,
-	shadowOffsetX: .5,
-	shadowOffsetY: .5,
+	shadowOffsetX: 0.5,
+	shadowOffsetY: 0.5,
 	backgroundColor: {
 		image: sportsIcon.a
-	},
+	}
 };
+var _normal;
 TekaChart.setOption({
-	title: {
-		text: "Telat KAYA",
-		textStyle: {
-			fontSize: 40,
-			fontFamily: "Concert One, cursive",
-			color: "#fca311",
-			align: "center"
-		},
-		left: "center",
-		top: 20
+	grid: {
+		top: 300,
+		bottom: 0,
+		left: 0,
+		right: 0
 	},
 	xAxis: {
-		show: false
+		show: false,
+		type: "category",
+		boundaryGap: false,
+		data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 	},
 	yAxis: {
 		show: false,
-		scale: true
+		type: "value"
 	},
-
 	series: [
 		{
-			type: "pie",
-			radius: ["46%", "70%"],
-			avoidLabelOverlap: true,
-			hoverAnimation: false,
-			rroseType: "radius",
-			data: [
-				{ name: "Skills", value: 1 },
-				{ name: "Abilities", value: 1 },
-				{ name: "Test", value: 1 }
-			],
-			label: {
-                normal: {
-                    formatter: function(params) {
-                        var str = '';
-                        switch (params.name) {
-                            case 'Skills':
-                                str = '{a|}';
-                                break;
-                            case 'Abilities':
-                                str = '{b|}';
-                                break;
-                            case 'Test':
-                                str = '{c|}';
-                                break;
-                        }
-                        return str
-                    },
-                    rich: {
-                        a: richTextStyle,
-                        b: richTextStyle,
-                        c: richTextStyle,
-                        nameStyle: {
-                            fontSize: 16,
-                            color: "#f24156",
-                        },
-                        rate: {
-                            fontSize: 20,
-                            lineHeight: 30,
-                            color: "#000",
-                        }
-                    }
-                }
-            },
-			labelLine: {
-                normal: {
-                    show: true,
-                    length: 90,
-                    length2: 45,
-                    smooth: true,
-                    lineStyle: {
-                        type: 'dashed',
-                        width: 1.5,
-                        color: '#979691',
-                        shadowColor: '#fff',
-                        shadowBlur: 0,
-                        shadowOffsetX: .5,
-                        shadowOffsetY: .5,
-                    }
-                },
-                emphasis: {
-                    lineStyle: {
-                        type: 'dashed',
-                        width: 2,
-                    }
-                }
-            },
-			itemStyle: {
-				normal: {
-					color:'#fca311',
-					shadowBlur: 5,
-					shadowColor: "rgba(255, 255, 255, 0.1)"
-				}
+			data: [4, 6, 4, 4, 2, 2, 0],
+			type: "line",
+			symbolSize: 0,
+			smooth: true,
+			areaStyle: {
+				color: ["#3D4657"]
 			},
-
-			animationType: "scale",
-			animationEasing: "elasticOut",
-			animationDelay: function animationDelay(idx) {
-				return Math.random() * 200;
-			}
-		},{
+			lineStyle: {
+				width: 0
+			},
+			zlevel:10
+		},
+		{
+			data: [4, 6, 5, 5, 3, 2, 0],
+			type: "line",
+			symbolSize: 0,
+			smooth: true,
+			areaStyle: {
+				color: ["#475266"]
+			},
+			lineStyle: {
+				width: 0
+			},
+			zlevel:10
+		},
+		{
 			name: "1990",
 			type: "effectScatter",
-			data: [
-			  [0, 1, 10, "Turkey", 1990],
-			  [10, 2, 20, "United Kingdom", 1990],
-			  [0, 3, 3, "United States", 1990]
-			],
-			itemStyle:{
-				color:'#fca311'
+			data: [[3,5, 12, "Turkey"]],
+			itemStyle: {
+				color: "#fca311"
 			},
-			symbol:'image://assets/img/partitect-logo.svg',
-			symbolKeepAspect:true,
+			symbol: "circle",
+			rippleEffect:{
+				//brushType:'stroke',
+				period:5,
+				scale:7
+			},
+			symbolKeepAspect: true,
 			symbolSize: function(data) {
-			  return Math.sqrt(data[2]) * 20;
-			}
-		  }
+				return Math.sqrt(data[2]) * 20;
+			},
+			zlevel:11
+		},
+		{
+			type: "pie",
+			radius: '5%',
+			center: ['50%', '50%'],
+			avoidLabelOverlap: false,
+			zlevel:11,
+			itemStyle:{
+				color:'transparent'
+			},
+			labelLine: {
+				show: true,
+				length: 50,
+				length2:100,
+				smooth: 0.3,
+
+				lineStyle:{
+					width:3,
+					color: "#fca311",
+					lineStyle:'dotted',
+				},
+			},
+			label:{
+				color: "#fca311",
+				fontSize:30,
+				fontFamily: "Comfortaa, cursive",
+				fontWeight:700
+			},
+			data: [
+                {value: 335, name: 'creative'},
+                {value: 310, name: 'open for improvement'},
+                {value: 234, name: 'experienced'},
+            ]
+		}
 	]
 });

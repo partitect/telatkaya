@@ -4,6 +4,21 @@ block pageVars
 	- var menuCrumb = "Pages";
 	- var pageTitle = "Telat Kaya Personal Web";
 block PageContent
+	.ui.container
+		+grid()
+			+column()
+				.ui.segment.page-segment
+					.slide-navigation__txt
+						ul
+							li
+								span(data-order='1') Github
+							li
+								span(data-order='2') Themeforest
+							li
+								span(data-order='3') Gitlab
+					.title
+						h1 I'm Telat Kaya
+						p Frontend Developer / Javascript Developer
 	.main-wrapper
 		.page-wrapper
 			.teka-charts(id="tekaCharts",style="width:100%;height:85vh")

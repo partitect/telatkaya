@@ -1,0 +1,28 @@
+include ./includes/_menu
+.ui.container
+	.ui.icon.menu.borderless.nav-menu
+		a.item.text-item(href="index.html")
+			h1 Te-Ka
+		a.toc.item.toggle-sidebar
+			i.icon.big.iconfont.icon-xitongcaidan
+		.right.menu
+			each menu1 in menu
+				if (menu1.child.length == 0)
+					a.item.link-item(href=""+menu1.link+"") #{menu1.text}
+				else
+					.ui.dropdown.link.item.drop-item
+						| #{menu1.text}
+						i.dropdown.icon
+						.menu
+							each menu2 in menu1.child
+								if  !menu2.child
+									a.item(href=""+menu2.link+"") #{menu2.text}
+								else
+									.item
+										i.dropdown.icon
+										span.text #{menu2.text}
+										.menu
+											each menu3 in menu2.child
+												a.item(href=""+menu3.link+"") #{menu3.text}
+			.item.button-item
+				.ui.button Hire ME
