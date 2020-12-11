@@ -70,9 +70,7 @@ TekaChart.setOption({
 			},
 			symbol: "circle",
 			rippleEffect:{
-				//brushType:'stroke',
-				period:5,
-				scale:7
+
 			},
 			symbolKeepAspect: true,
 			symbolSize: function(data) {
