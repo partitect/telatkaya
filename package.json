@@ -80,6 +80,7 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-htmlmin": "^5.0.1",
 		"imagemin-mozjpeg": "^9.0.0",
-		"main-bower-files": "^2.13.3"
+		"main-bower-files": "^2.13.3",
+		"push-dir": "^0.4.1"
 	}
 }
