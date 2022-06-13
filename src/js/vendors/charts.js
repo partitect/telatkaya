@@ -38,12 +38,12 @@ TekaChart.setOption({
 	},
 	series: [
 		{
-			data: [4, 6, 4, 4, 2, 2, 0],
+			data: [1, 6, 4, 3, 2, 2, 0],
 			type: "line",
 			symbolSize: 0,
 			smooth: true,
 			areaStyle: {
-				color: ["#3D4657"]
+				color:'white'
 			},
 			lineStyle: {
 				width: 0
@@ -51,12 +51,12 @@ TekaChart.setOption({
 			zlevel: 10
 		},
 		{
-			data: [4, 6, 5, 5, 3, 2, 0],
+			data: [4, 3, 2, 6, 3, 2, 0],
 			type: "line",
 			symbolSize: 0,
 			smooth: true,
 			areaStyle: {
-				color: ["#475266"]
+				color:'red'
 			},
 			lineStyle: {
 				width: 0
@@ -81,7 +81,7 @@ TekaChart.setOption({
 		{
 			type: "pie",
 			radius: "5%",
-			center: ["50%", "60%"],
+			center: ["50%", "50%"],
 			avoidLabelOverlap: false,
 			zlevel: 11,
 			itemStyle: {

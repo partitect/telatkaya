@@ -16,5 +16,6 @@ $(document).ready(function () {
 
 	window.onresize = function () {
 		setTimeout(chartResize, 300);
+		console.log("resize");
 	};
 });
