@@ -65,7 +65,7 @@ const src = {
 
 // Distribution Path
 const tmpRoot = ".tmp";
-const distRoot = isTemplatemonsterTheme ? `${pkg.name}-v${pkg.version}` : "dist";
+const distRoot = isTemplatemonsterTheme ? `${pkg.name}-v${pkg.version}` : "docs";
 const dist = {
 	views: isProduction ? `${distRoot}` : `${tmpRoot}`,
 	styles: isProduction ? `${distRoot}/assets/css` : `${tmpRoot}/assets/css`,
